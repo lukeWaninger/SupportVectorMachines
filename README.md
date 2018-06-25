@@ -7,6 +7,7 @@ The notebook, SVMKernels.ipynb, displays my implementation of a kernel-based Sup
   
   Please take a look and feel free to email me with any questions or comments! I'd love to hear some feedback.
   
-  The notebook can be found at <a href="https://notebooks.azure
-  .com/lukewaninger/libraries/SupportVectorMachines">Azure Notebooks</a>. For full functionality, the kernel must be 
+  The notebook implements parallel computing techniques that utilize the forking mechanism embedded into Linux based 
+  kernels and as such won't work on Windows. Because of this, it is hosted and can be found at <a 
+  href="https://notebooks.azure.com/lukewaninger/libraries/SupportVectorMachines">Azure Notebooks</a>. For full functionality, the kernel must be 
   running with Python version 3.6. Enjoy!
