@@ -8,7 +8,7 @@ from scipy.special import comb
 from scipy.stats import mode
 from tqdm import tqdm
 
-
+# for mathematical readability
 exp   = np.exp
 na    = np.newaxis
 norm  = np.linalg.norm
