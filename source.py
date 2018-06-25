@@ -8,13 +8,12 @@ from scipy.special import comb
 from scipy.stats import mode
 from tqdm import tqdm
 
-
+# for mathematical readability
 exp   = np.exp
 na    = np.newaxis
 norm  = np.linalg.norm
 ident = np.identity
 np.random.seed(42)
-py.init_notebook_mode(connected=True)
 
 
 def backtracking(k, y, beta, l, eta, grad, obj, a=0.5, t_eta=0.8, max_iter=5):
