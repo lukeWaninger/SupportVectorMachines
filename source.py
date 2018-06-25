@@ -3,7 +3,6 @@ import itertools as it
 import numpy  as np
 from multiprocessing.dummy import Pool as threadPool
 import multiprocessing
-import plotly.graph_objs as go
 import plotly.offline as py
 import re
 from scipy.special import comb
