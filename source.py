@@ -116,17 +116,17 @@ def track_bar(total, desc=''):
         desc (string): [optional] description for display
 
     Returns:
-        Queue, put element to signal completed task
+        Queue, put to signal completed task
     """
     def track_it(total, trackq):
         pbar = tqdm(total=total, desc=desc)
         while True:
-            update = trackq.get()
+            n = trackq.get()
 
-            if update == 'END_FLAG':
+            if n == 'END_FLAG':
                 break
             else:
-                pbar.update(1)
+                pbar.update(n)
 
     trackq = multiprocessing.Queue()
     multiprocessing.Process(target=track_it, args=(total, trackq)).start()
@@ -162,12 +162,6 @@ class Estimator(object):
         yield
 
     def predict_proba(self):
-        yield
-
-
-class Kernel(object):
-    """even tinier base class for SVM kernels"""
-    def compute(self):
         yield
 
 
